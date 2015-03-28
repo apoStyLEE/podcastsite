@@ -50,6 +50,7 @@ var podcastApp = {
 
         audioPlayer.setAttribute("data-id", id);
         
+        audioPlayer.load();
         audioPlayer.play();       
 
         audioPlayer.onpause = function() {
