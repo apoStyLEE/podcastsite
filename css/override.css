@@ -22,6 +22,15 @@
 	padding: 20px 0;
 }
 
+.portfolio-modal .modal-content .img-background{
+  position: absolute;
+  left: -15px;
+  top: -30px;
+  width: 100%;
+  opacity: .2;
+  z-index: -1!important;
+}
+
 .portfolio-modal .modal-content audio{
 	margin-bottom: 10px;
 }
