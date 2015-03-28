@@ -6,9 +6,15 @@ window.onload = function() {
 var podcastApp = {
   podcasts : {},
 
+  settings : {
+    "parseApplicationId" : "hZaugGqe8WWNwvJQXdLMZ6SQCrjwwUcZP5wk9VRK",
+    "parseJavaScriptKey" : "BJv2vr3Rm2Y6DwLOJrDzupFkmL0XltechN54UQ2L",
+  },
+
   init : function() {
     this.loadPodcastData();
     this.helpers.registerHandlebarHelpers();
+    Parse.initialize(this.settings.parseApplicationId, this.settings.parseJavaScriptKey);
   },
 
   loadPodcastData : function () {
@@ -22,8 +28,11 @@ var podcastApp = {
   },
 
   render : function () {
-    this.podcasts.items.reverse();
-    var podcasts = this.podcasts;
+
+    var _this = this;
+
+    _this.podcasts.items.reverse();
+    var podcasts = _this.podcasts;
     var podcastTemplateSource = $("#podcasts-template").html();
     var podcastTemplate = Handlebars.compile(podcastTemplateSource);
     var podcastTemplateHtml = podcastTemplate(podcasts);
@@ -37,9 +46,28 @@ var podcastApp = {
         var id = $this.attr("href").replace("#","");
         var podcastItem = podcasts.items[index];
         var portfolioModal = $(".portfolio-modal#"+id);
-        var audioPlayer = portfolioModal.find("audio");
-        audioPlayer[0].play();
+        var audioPlayer = portfolioModal.find("audio")[0];
+
+        audioPlayer.setAttribute("data-id", id);
+        
+        audioPlayer.play();       
+
+        audioPlayer.onpause = function() {
+          _this.stats.add(id, "pause");
+        };
+
+        audioPlayer.onplay = function() {
+          _this.stats.add(id, "play");
+        };
+
+        audioPlayer.onstop = function() {
+          _this.stats.add(id, "stop");
+        };
+
         location.hash = "#"+id;
+
+        _this.stats.countQuery(id, "play" , portfolioModal.find(".playCount"));
+
     });
 
 
@@ -50,10 +78,42 @@ var podcastApp = {
 
     $('.portfolio-modal').on('hide.bs.modal', function (e) {
         var audioPlayer = $(this).find("audio");
+        var podcastId = audioPlayer.attr("data-id");
         audioPlayer[0].pause();
+        _this.stats.add(podcastId, "pause");
         location.hash = "";
     });
 
+  },
+
+  stats : {
+    
+    add : function (podcastid, action) {
+      var PodcastCounterObject = Parse.Object.extend("PodcastCounter");
+      var podcastCounterObject = new PodcastCounterObject();
+      var data = {
+          podcastid:podcastid,
+          action:action
+      };
+      podcastCounterObject.save(data);
+    },
+
+    countQuery: function(podcastid, action, targetElement) {
+      var PodcastCounterObject = Parse.Object.extend("PodcastCounter");
+      var query = new Parse.Query(PodcastCounterObject);
+      query.equalTo("podcastid", podcastid);
+      query.equalTo("action", action);
+      
+      query.count({
+          success: function(count) {           
+            targetElement.html(count +" oynatma");
+          },
+          error: function(error) {
+            
+          }
+      });
+
+    }
   },
 
   helpers : {
