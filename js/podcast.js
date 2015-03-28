@@ -3,8 +3,6 @@ window.onload = function() {
   podcastApp.init();
 }
 
-
-
 var podcastApp = {
   podcasts : {},
 
@@ -24,6 +22,7 @@ var podcastApp = {
   },
 
   render : function () {
+    this.podcasts.items.reverse();
     var podcasts = this.podcasts;
     var podcastTemplateSource = $("#podcasts-template").html();
     var podcastTemplate = Handlebars.compile(podcastTemplateSource);
@@ -40,12 +39,19 @@ var podcastApp = {
         var portfolioModal = $(".portfolio-modal#"+id);
         var audioPlayer = portfolioModal.find("audio");
         audioPlayer[0].play();
+        location.hash = "#"+id;
     });
 
+
+    var hash = window.location.hash;
+    if (hash != "") {       
+        $(".js-podcast-item[href='"+hash+"']").trigger("click");
+    };
 
     $('.portfolio-modal').on('hide.bs.modal', function (e) {
         var audioPlayer = $(this).find("audio");
         audioPlayer[0].pause();
+        location.hash = "";
     });
 
   },

@@ -115,7 +115,8 @@
                 <div class="col-lg-4 col-lg-offset-2">
                     <h4>Emre Tekelioğlu</h4>
                     <p>
-                        abi sana zahmet buraya bir şeyler uydurur musun?    
+                        Mühendisim, yıllardır kod yazıyorum. Zor işler döner dolaşır beni bulur. Fobilerim arasında üşümek ve adaletsizlik gelir.
+                        Konuşurken dişlerimi sıkmıyorum, size öyle geliyor, o benim. Spora başlayacağım dersem başlarım.
                     </p>
                     <p class="text-right">
                         <strong>@emret</strong>
@@ -192,8 +193,22 @@
                             <img src="{{../imagerootpath}}{{image}}" class="img-responsive img-centered" />
                         </div>
 
-                        <div class="col-sm-7">
+                        <div class="col-sm-7 text-left">
                             <p>{{formattedText description}}</p>
+
+                            {{#if speakers}}
+                                <br />
+                                
+                                <h5>Konuşanlar; </h5>
+                                <ul>
+                                {{#each speakers}}
+                                    <li>
+                                        <strong>{{displayName}}</strong> {{description}}
+                                    </li>
+                                {{/each}}
+                                </ul>
+                            {{/if}}
+
                         </div>
                     </div>
 

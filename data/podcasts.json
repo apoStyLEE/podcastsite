@@ -7,7 +7,7 @@
 
   "items": [
     {
-      "id": "93EB8A78-ED28-FA8F-416B-F552F3D6C5BA",
+      "id": "bolum1",
       "title": "Bölüm 1",
       "description": "Fehmi Can SağlamCikolatali Akan Kek 5. Bolum\nhttps://soundcloud.com/fehmi-can-saglam\n\n10 Mart 2011 Etohum Toplantısı - Eren Bali - udemy.com http://vimeo.com/20993420\n\nWebrazzi Ofisi’nin bu haftaki konuğu Wallit Kurucusu Veysel Berk oldu http://webrazzi.com/2013/04/15/girisimler-webrazzi-ofisinde-veysel-berk-wallit/\n\nJstanbul Meetup #003: The Happy Programmer, Nickel.rs on Rust http://www.meetup.com/jstanbul/events/199754192/",
       "duration": "2614187",
@@ -18,7 +18,7 @@
         }
     },
     {
-      "id": "D6360370-B621-A4B4-47ED-FA383DB1E2E7",
+      "id": "bolum2",
       "title": "Bölüm 2",
       "description": "Cikolatali Akan Kek 0. Bolum https://soundcloud.com/fehmi-can-saglam/cikolatali-akan-kek-0-bolum",
       "duration": "3055359",
@@ -31,7 +31,7 @@
       
     },
     {
-      "id": "F1882A4B-7A2F-939F-4574-2CB428DC7BEA",
+      "id": "bolum3",
       "title": "Bölüm 3",
       "description": "Debugging - http://en.wikipedia.org/wiki/Debugging\n\nJavaScript - http://en.wikipedia.org/wiki/JavaScript\n\nA component-based, event-driven JavaScript framework from Twitter \nhttp://flightjs.github.io/\n\nAngularJS, Emberjs, Backbonejs, KnockoutJs\n\nBootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web. http://getbootstrap.com/\n\nhttps://soundcloud.com/fehmi-can-saglam/cikolatali-akan-kek-7-bolum",
       "duration": "2395235",
@@ -44,7 +44,7 @@
       
     },
     {
-      "id": "AFA86394-74C7-7291-4E03-2F2808C1DB26",
+      "id": "bolum4",
       "title": "Bölüm 4",
       "description": "Hazelcast the Leading Open Source In-Memory Data Grid http://hazelcast.com\n\nhttp://www.alibaba.com/",
       "duration": "2926955",
@@ -57,7 +57,7 @@
       
     },
     {
-      "id": "7F82BDB7-7DAA-70B3-40DF-1AA140FBDD13",
+      "id": "bolum5",
       "title": "Bölüm 5",
       "description": "Unicrow — Unique Solutions http://www.unicrow.com/\r\nFatih Turan https://twitter.com/fatihturan\r\nEmre Efendioğlu https://twitter.com/emreefendioglu\r\nÜmit Dincel - https://twitter.com/ktumit (Müller)",
       "duration": "4609790",
@@ -71,7 +71,7 @@
       
     },
     {
-      "id": "A84B3133-6D0E-DBB8-4312-BD2BFB942021",
+      "id": "bolum6",
       "title": "Bölüm 6.2",
       "description": "Yunus Emre Çavuşoğlu ile yazılım ağırlıklı sohbet ettik.\nhttps://twitter.com/c_emreyns",
       "duration": "2217167",
@@ -84,7 +84,7 @@
       
     },
     {
-      "id": "35F5CEED-19B9-FFA8-44A5-EBD6666BACD4",
+      "id": "bolum7",
       "title": "Bölüm 7",
       "description": "Halit Alptekin ile sohbet etmeye çalıştık :) https://github.com/halitalptekin\nhttps://twitter.com/halitalptekin\nhttp://halitalptekin.com/\n\nhttps://asciinema.org/a/11128\nhttp://www.gizemiskenderoglu.com/\nhttp://octosec.net/\nhttp://dojo.octosec.net/",
       "duration": "2729816",
@@ -96,6 +96,29 @@
           "mp3": "/bolum7.mp3"
         }
       
+    },
+    {
+      "id": "bolum8",
+      "title": "Bölüm 8",
+      "description": "KTÜ Elektrik Elektronik Kulübü - Kariyer Gelişim Günleri 15 de Trabzon HackerSpace olarak bir şeyler anlattık ve çaktırmadan bunu kayda aldık :D",
+      "duration": "2729816",
+      "image": "/bolum8.jpg",
+      "recorddate": "2015/03/20 10:10:00 +0000",
+      "cssclass" : "middle",
+      "soundfile": 
+        {
+          "mp3": "/bolum8.mp3"
+        },
+      "speakers" : [
+         {
+           "displayName" : "Emre Efendioğlu",
+           "description" : "Unicrow Co-Founder"
+         },
+         {
+           "displayName" : "Gürkan Yarar",
+           "description" : "Robilab Co-Founder"
+         }
+      ]
     }
   ]
 }
