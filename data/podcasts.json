@@ -3,7 +3,7 @@
   "title": "Bu Masalda Peri Yok",
   "description": "Bu Masalda Peri Yok",
   "soundrootpath": "http://apostylee.com/podcast/bolums",
-  "imagerootpath": "/podcasts",
+  "imagerootpath": "http://podcast.apostylee.com/podcasts",
 
   "items": [
     {
@@ -24,11 +24,11 @@
       "duration": "3055359",
       "image": "/bolum2.jpg",
       "recorddate": "2014/09/12 18:20:08 +0000",
-      "soundfile": 
+      "soundfile":
         {
           "mp3": "/bolum2.mp3"
         }
-      
+
     },
     {
       "id": "bolum3",
@@ -37,11 +37,11 @@
       "duration": "2395235",
       "image": "/bolum3.jpg",
       "recorddate": "2014/09/20 20:14:17 +0000",
-      "soundfile": 
+      "soundfile":
         {
           "mp3": "/bolum3.mp3"
         }
-      
+
     },
     {
       "id": "bolum4",
@@ -50,11 +50,11 @@
       "duration": "2926955",
       "image": "/bolum4.jpg",
       "recorddate": "2014/09/28 11:00:09 +0000",
-      "soundfile": 
+      "soundfile":
         {
           "mp3": "/bolum4.mp3"
         }
-      
+
     },
     {
       "id": "bolum5",
@@ -64,11 +64,11 @@
       "image": "/bolum5.jpg",
       "recorddate": "2014/10/12 16:34:41 +0000",
       "cssclass" : "middle",
-      "soundfile": 
+      "soundfile":
         {
           "mp3": "/bolum5.mp3"
         }
-      
+
     },
     {
       "id": "bolum6",
@@ -77,11 +77,11 @@
       "duration": "2217167",
       "image": "/bolum6.2.jpg",
       "recorddate": "2014/10/26 18:37:08 +0000",
-      "soundfile": 
+      "soundfile":
         {
           "mp3": "/bolum6.2.mp3"
         }
-      
+
     },
     {
       "id": "bolum7",
@@ -91,11 +91,11 @@
       "image": "/bolum7.jpg",
       "recorddate": "2014/10/31 08:42:41 +0000",
       "cssclass" : "middle",
-      "soundfile": 
+      "soundfile":
         {
           "mp3": "/bolum7.mp3"
         }
-      
+
     },
     {
       "id": "bolum8",
@@ -105,7 +105,7 @@
       "image": "/bolum8.jpg",
       "recorddate": "2015/03/20 10:10:00 +0000",
       "cssclass" : "middle",
-      "soundfile": 
+      "soundfile":
         {
           "mp3": "/bolum8.mp3"
         },
@@ -117,6 +117,63 @@
          {
            "displayName" : "Gürkan Yarar",
            "description" : "Robilab Co-Founder"
+         }
+      ]
+    },
+    {
+      "id": "bolum9",
+      "title": "Bölüm 9",
+      "description": "Gökhan ile çeşitli teknolojik şeyler üzerine tatildeyken yaptığımız muhabbet.",
+      "duration": "2729816",
+      "image": "/bolum9.jpg",
+      "recorddate": "2015/09/24 20:24:00 +0000",
+      "cssclass" : "middle",
+      "soundfile":
+        {
+          "mp3": "/bolum9.mp3"
+        },
+      "speakers" : [
+         {
+           "displayName" : "M. Gökhan Elbir",
+           "description" : ""
+         }
+      ]
+    },
+    {
+      "id": "bolum10",
+      "title": "Bölüm 10",
+      "description": "ilker Aksu ile geliştirme dünyası ile ilgili yaptığımız sohbet.",
+      "duration": "2729816",
+      "image": "/bolum10.jpg",
+      "recorddate": "2016/02/15 22:24:00 +0000",
+      "cssclass" : "middle",
+      "soundfile":
+        {
+          "mp3": "/bolum10.mp3"
+        },
+      "speakers" : [
+         {
+           "displayName" : "ilker Aksu",
+           "description" : "SiberUzay Teknolojileri"
+         }
+      ]
+    },
+    {
+      "id": "bolum11",
+      "title": "Bölüm 11",
+      "description": "Halil İbrahim Nuroğlu ile tasarım, etkinlik ve hikayesini konuştuk.",
+      "duration": "2729816",
+      "image": "/bolum11.jpg",
+      "recorddate": "2016/02/03 18:59:00 +0000",
+      "cssclass" : "middle",
+      "soundfile":
+        {
+          "mp3": "/bolum11.mp3"
+        },
+      "speakers" : [
+         {
+           "displayName" : "Halil İbrahim Nuroğlu",
+           "description" : "Ui Designer & Developer at www. Working at @unicrow and Founder at @Booksayingcom and love and joke, it's over."
          }
       ]
     }

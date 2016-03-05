@@ -1,7 +1,9 @@
-#portfolio{}
-#portfolio .portfolio-item a{height:230px;overflow: hidden;}
+#portfolio{padding: 130px;}
+#portfolio .portfolio-item a{height:270px;overflow: hidden;}
 
-#portfolio .portfolio-item a img.middle{margin-top: -80px;}
+#portfolio .portfolio-item a img.middle{
+
+}
 
 #portfolio .portfolio-item .caption .caption-title{
 	position: absolute;
@@ -42,4 +44,13 @@
 hr.star-light:after,
 hr.star-primary:after {
     content: "\f130";
+}
+
+.link{
+	color:white;
+}
+
+.link:hover{
+	color:white;
+	text-decoration: underline;
 }
